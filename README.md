@@ -55,4 +55,7 @@ op.add()
 op.as_hex()
 ```
 Output: '0x1'
+### Extensability:
+The Operation class defines the base class that represents an operation between 1+ types of numbers. The module is defined such that one can enter any number of inputs in any number format. The fcomputations are done with converting all inputs into ints. To view the reult one must cast it to a number format to ensure the user gets exactly what they expected.
+One can easily add more functions or extend a certain function of the Operation class. Code is also written so a user cannot accidentally or purposely change the value of the attributes such as input and result without using the proper methods. 
 
