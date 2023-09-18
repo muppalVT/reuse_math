@@ -37,17 +37,22 @@
       - Output: octal str
 ### Usage:
 Demos of how to use the library
-'''
+```
 op = Operation([1,2,3])
 op.add()
 op.as_int()
-'''
+```
 Output: 6
-'''
+```
 op = Operation([1,'0x0',3])
 op.add()
 op.as_int()
-'''
+```
 Output: 4
-
+```
+op = Operation([1])
+op.add()
+op.as_hex()
+```
+Output: '0x1'
 
